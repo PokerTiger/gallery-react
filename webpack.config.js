@@ -6,7 +6,7 @@ var src_dir=path.resolve(__dirname,'src');
 
 
 module.exports = {
-  entry: src_dir+'/index.js',
+  entry:'./src/index.js',
   
   output: {
     filename: 'bundle.js',
@@ -26,6 +26,7 @@ module.exports = {
            'css-loader'
          ]
        },
+       //pics loader
         {
          test: /\.(png|svg|jpg|gif)$/,
          use: [
@@ -34,9 +35,7 @@ module.exports = {
       },
          {
           test: /\.json$/,
-          use: [
-            'json-loader'
-          ]
+          use: 'json-loader'
         },
           {
         test: /\.(png|jpg|gif)$/,
@@ -50,7 +49,6 @@ module.exports = {
         ]
       },
       {
-
          test: /\.js$/, 
          exclude: /node_modules/, 
          loader: "babel-loader" 

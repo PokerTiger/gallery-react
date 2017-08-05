@@ -1,87 +1,53 @@
 [
-     
-      {
-      	"filename":"1.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-  {
-      	"filename":"2.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"3.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"4.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"5.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-
-        {
-      	"filename":"6.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"7.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"8.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"9.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"10.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"11.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"12.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"13.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"14.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"15.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-        {
-      	"filename":"16.jpg",
-      	"title":"Have fun",
-      	"description":"Yo Check it out"
-      },
-
-
-
+	{
+		"fileName":"1.jpg",
+		"title":"Hello kitty",
+		"desc":"pink Kitty."
+	},
+	{
+		"fileName":"2.jpg",
+		"title":"Doraemon",
+		"desc":"blue Doraemon."
+	},
+	{
+		"fileName":"3.jpg",
+		"title":"Mr.Fox",
+		"desc":"Crazy animal City Nick Fox"
+	},
+	{
+		"fileName":"4.jpg",
+		"title":"Antenna baby",
+		"desc":"green Antenna baby."
+	},
+	{
+		"fileName":"5.jpg",
+		"title":"Rilakkuma",
+		"desc":"relax Rilakkuma."
+	},
+	{
+		"fileName":"6.jpg",
+		"title":"Pikachu",
+		"desc":"yellow Pikachu"
+	},
+	{
+		"fileName":"7.jpg",
+		"title":"Hello kitty",
+		"desc":"blue kitty"
+	},
+	{
+		"fileName":"8.jpg",
+		"title":"Mickey Mouse",
+		"desc":"Mickey Mouse"
+	},
+	{
+		"fileName":"9.jpg",
+		"title":"SpongeBob SquarePants",
+		"desc":"SpongeBob SquarePants"
+	},
+	{
+		"fileName":"10.jpg",
+		"title":"Doraemon",
+		"desc":"green Doraemon"
+	}
+	
 ]
