@@ -9735,48 +9735,57 @@ module.exports = getHostComponentFromComposite;
 
 /***/ }),
 /* 81 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_css__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_css__);
 
 
+var _react = __webpack_require__(82);
 
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(98);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _style = __webpack_require__(184);
+
+var _style2 = _interopRequireDefault(_style);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //get pics's data
 var imageDatas = __webpack_require__(189);
 //利用函数 将图片信息转成图片url
-imageDatas = function genImageURL(imageDataArr) {
-  for (var i = 0, j = imageDataArr.length; i < j; i++) {
-    var singleIamgeData = imageDataArr[i];
+// var React=require('react');
+// var ReactDOM=require('react-dom');
+imageDatas = function genImageURL(imageDatasArr) {
+  for (var i = 0, j = imageDatasArr.length; i < j; i++) {
+    var singleIamgeData = imageDatasArr[i];
     singleIamgeData.imageURL = __webpack_require__(190)("./" + singleIamgeData.fileName);
-    imageDataArr[i] = singleIamgeData;
+    imageDatasArr[i] = singleIamgeData;
   }
   console.log(222);
 
-  return imageDataArr;
+  return imageDatasArr;
 }(imageDatas);
 
-var ImgFigure = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
+var ImgFigure = _react2.default.createClass({
   displayName: 'ImgFigure',
 
-  rende: function () {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+  render: function render() {
+    console.log(111);
+
+    return _react2.default.createElement(
       'figure',
       null,
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: this.props.data.imageURL,
+      _react2.default.createElement('img', { src: this.props.data.imageURL,
         alt: this.props.data.title
       }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         'figcaption',
         null,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        _react2.default.createElement(
           'h2',
           null,
           this.props.data.title
@@ -9786,28 +9795,26 @@ var ImgFigure = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
   }
 });
 
-var index = react.createClass({
-  render: function () {
+var index = _react2.default.createClass({
+  displayName: 'index',
+
+  render: function render() {
     console.log(111);
     var conntrollerUnits = [],
         ImgFigures = [];
-
     imageDatas.forEach(function (value, index) {
-
-      ImgFigure.push(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ImgFigure, { data: value, key: 'imgFigures' + index }));
+      ImgFigure.push(_react2.default.createElement(ImgFigure, { data: value, key: 'imgFigures' + index }));
     });
-
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    return _react2.default.createElement(
       'section',
       { className: 'stage' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('section', { className: 'img-sec' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('nav', { className: 'controller-nav' })
+      _react2.default.createElement('section', { className: 'img-sec' }),
+      _react2.default.createElement('nav', { className: 'controller-nav' })
     );
   }
-
 });
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('index', null), document.getElementById('content'));
+_reactDom2.default.render(_react2.default.createElement('index', null), document.getElementById('content'));
 
 /***/ }),
 /* 82 */
@@ -23039,14 +23046,20 @@ module.exports = [{"fileName":"1.jpg","title":"Hello kitty","desc":"pink Kitty."
 var map = {
 	"./1.jpg": 191,
 	"./10.jpg": 192,
-	"./2.jpg": 193,
-	"./3.jpg": 194,
-	"./4.jpg": 195,
-	"./5.jpg": 196,
-	"./6.jpg": 197,
-	"./7.jpg": 198,
-	"./8.jpg": 199,
-	"./9.jpg": 200
+	"./11.jpg": 193,
+	"./12.jpg": 194,
+	"./13.jpg": 195,
+	"./14.jpg": 196,
+	"./15.jpg": 197,
+	"./16.jpg": 198,
+	"./2.jpg": 199,
+	"./3.jpg": 200,
+	"./4.jpg": 201,
+	"./5.jpg": 202,
+	"./6.jpg": 203,
+	"./7.jpg": 204,
+	"./8.jpg": 205,
+	"./9.jpg": 206
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -23080,7 +23093,7 @@ module.exports = __webpack_require__.p + "7fdba2764d483e1382e7c4d2b91bbde1.jpg";
 /* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "f4fbd95efc9272a01ec33a897a3ea273.jpg";
+module.exports = __webpack_require__.p + "7fdba2764d483e1382e7c4d2b91bbde1.jpg";
 
 /***/ }),
 /* 194 */
@@ -23092,13 +23105,13 @@ module.exports = __webpack_require__.p + "7fdba2764d483e1382e7c4d2b91bbde1.jpg";
 /* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1a93b7aaf4b30eea179680a5c0f689b8.jpg";
+module.exports = __webpack_require__.p + "7fdba2764d483e1382e7c4d2b91bbde1.jpg";
 
 /***/ }),
 /* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1a93b7aaf4b30eea179680a5c0f689b8.jpg";
+module.exports = __webpack_require__.p + "7fdba2764d483e1382e7c4d2b91bbde1.jpg";
 
 /***/ }),
 /* 197 */
@@ -23110,16 +23123,52 @@ module.exports = __webpack_require__.p + "f4fbd95efc9272a01ec33a897a3ea273.jpg";
 /* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "f4fbd95efc9272a01ec33a897a3ea273.jpg";
+module.exports = __webpack_require__.p + "7fdba2764d483e1382e7c4d2b91bbde1.jpg";
 
 /***/ }),
 /* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1a93b7aaf4b30eea179680a5c0f689b8.jpg";
+module.exports = __webpack_require__.p + "f4fbd95efc9272a01ec33a897a3ea273.jpg";
 
 /***/ }),
 /* 200 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7fdba2764d483e1382e7c4d2b91bbde1.jpg";
+
+/***/ }),
+/* 201 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "1a93b7aaf4b30eea179680a5c0f689b8.jpg";
+
+/***/ }),
+/* 202 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "1a93b7aaf4b30eea179680a5c0f689b8.jpg";
+
+/***/ }),
+/* 203 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f4fbd95efc9272a01ec33a897a3ea273.jpg";
+
+/***/ }),
+/* 204 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f4fbd95efc9272a01ec33a897a3ea273.jpg";
+
+/***/ }),
+/* 205 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "1a93b7aaf4b30eea179680a5c0f689b8.jpg";
+
+/***/ }),
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "1a93b7aaf4b30eea179680a5c0f689b8.jpg";
