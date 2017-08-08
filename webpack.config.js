@@ -6,7 +6,7 @@ var src_dir=path.resolve(__dirname,'src');
 
 
 module.exports = {
-  entry:'./src/index.js',
+  entry:'./src/main.js',
   
   output: {
     filename: 'bundle.js',
@@ -22,20 +22,21 @@ module.exports = {
       {
         test: /\.css$/,
          use: [
-           'style-loader',
-           'css-loader'
+             'style-loader', 'css-loader'
          ]
        },
        //pics loader
-        {
-         test: /\.(png|svg|jpg|gif)$/,
-         use: [
-           'file-loader'
-         ]
-      },
+      //   {
+      //    test: /\.(png|svg|jpg|gif)$/,
+      //    use: [
+      //      'file-loader',
+      //        "file-loader?name=[name].[ext]&publicPath=images/&outputPath=images/"
+      //    ]
+      // },
          {
           test: /\.json$/,
-          use: 'json-loader'
+          use: 'json-loader',
+
         },
           {
         test: /\.(png|jpg|gif)$/,
@@ -43,7 +44,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 8192
+              limit: 100000
             }
           }
         ]
@@ -54,7 +55,6 @@ module.exports = {
          loader: "babel-loader" ,
          options:{
           presets:[
-          'react',
           'env'
           ]
          }
